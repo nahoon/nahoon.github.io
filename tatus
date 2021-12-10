@@ -1,0 +1,18 @@
+[1mdiff --git a/_includes/favicons.html b/_includes/favicons.html[m
+[1mindex 201f6d8..5958deb 100644[m
+[1m--- a/_includes/favicons.html[m
+[1m+++ b/_includes/favicons.html[m
+[36m@@ -6,10 +6,10 @@[m
+ {% capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture %}[m
+ [m
+ <link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png">[m
+[31m-<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path }}/favicon-32x32.png">[m
+[31m-<link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_path }}/favicon-16x16.png">[m
+[32m+[m[32m<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path }}/onew-32x32.png">[m
+[32m+[m[32m<link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_path }}/onew-16x16.png">[m
+ <link rel="manifest" href="{{ favicon_path }}/site.webmanifest">[m
+[31m-<link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico">[m
+[32m+[m[32m<link rel="shortcut icon" href="{{ favicon_path }}/onew.ico">[m
+ <meta name="apple-mobile-web-app-title" content="{{ site.title }}">[m
+ <meta name="application-name" content="{{ site.title }}">[m
+ <meta name="msapplication-TileColor" content="#da532c">[m
