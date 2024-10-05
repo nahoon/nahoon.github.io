@@ -1,2 +1,9 @@
 source "https://rubygems.org"
-gemspec
+
+gem "jekyll"
+gem "tzinfo"
+gem "tzinfo-data"
+gem "csv"
+gem "base64"
+gem "minimal-mistakes-jekyll"
+
