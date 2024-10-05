@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "GitHub Pages와 Jekyll을 사용한 블로그 세팅 및 오류 해결 과정"
 date: 2024-10-05
 categories: [Blog, GitHub, Jekyll]
