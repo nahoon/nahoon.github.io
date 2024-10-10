@@ -1,4 +1,10 @@
-# 엑셀 VBA를 사용하여 WBS 레벨에 따라 행과 열을 숨기기
+---
+layout: single
+title: "엑셀 VBA를 사용하여 WBS 레벨에 따라 행과 열을 숨기기"
+date: 2024-10-05
+categories: [Blog, GitHub, Jekyll]
+tags: [GitHub Pages, Jekyll, Ruby, 오류 해결]
+---
 
 엑셀에서 WBS(작업 분해 구조, Work Breakdown Structure)를 사용하여 여러 작업 항목을 관리할 때, 상위 및 하위 레벨의 항목을 효율적으로 숨기거나 표시하는 기능이 필요할 수 있습니다. 이 글에서는 특정 레벨을 선택했을 때, 관련된 하위 항목들을 숨기고 상위 항목은 그대로 표시하는 VBA 코드를 소개합니다. 또한, 선택된 레벨에 따라 열도 자동으로 숨겨지도록 기능을 구현합니다.
 
@@ -30,7 +36,7 @@
 
 다음은 해당 기능을 구현한 최종 VBA 코드입니다.
 
-\\\`\\\`\\\`
+```vb
 Private Sub Worksheet_Change(ByVal Target As Range)
     ' 상수 정의
     Const dropdownCell As String = "$C$4"  ' 드롭다운이 위치한 셀
@@ -126,7 +132,7 @@ End Sub
 Function ColLetter(ColNum As Long) As String
     ColLetter = Split(Cells(1, ColNum).Address, "$")(1)
 End Function
-\\\`\\\`\\\`
+```
 
 ### 코드 설명
 
